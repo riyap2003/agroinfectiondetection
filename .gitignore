@@ -12,7 +12,3 @@ flask_env/
 .vscode/
 
 
-# Ignore test ,train and validation images
-test/
-train/
-valid/
