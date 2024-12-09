@@ -109,97 +109,95 @@ After uploading the image, the app will process it, use the trained model to pre
 
 agro/
 
+|
 
-
-│
 ├── .gitignore               # Specifies which files/folders to exclude from Git tracking
 
-
+|
 
 ├── README.md                # Project description, installation instructions, etc.
 
-
+|
 
 ├── app.py                    # Flask application for plant disease prediction
 
-
+|
 
 ├── model/                    # Folder to store your trained model
 
-
+|   |
 
 │   └── trained_model.keras   # Your trained Keras model
 
-
+|
 
 ├── static/                   # Static files (images, CSS, JS)
 
-
+|   |
 
 │   ├── image.png             # Static image
 
-
+|
 
 │   ├── style.css             # Stylesheet
 
-
-
+|   |
 
 │   └── uploads/              # Folder for uploaded images
 
-
+|       |
 
 │       ├── AppleCedarRust1.JPG
 
-
+|       |
 
 │       ├── AppleCedarRust2.JPG
 
-
+|       |
 
 │       └── ...               # Other uploaded images
 
-
+|
 
 ├── templates/                # HTML templates for the Flask app
 
-
+|
 
 │   └── index.html            # Main HTML page for the web app
 
-
+|
 
 ├── test/                     # Folder containing test images for validation
 
-
+|   |
 
 │   ├── AppleCedarRust1.JPG
 
-
+|   |
 
 │   ├── CornCommonRust1.JPG
 
-
+|   |
 
 │   └── ...                   # Other test images
 
-
+|
 
 ├── train/                    # Folder for training images
 
-
+|   |
 
 │   └── ...                   # Training images
 
-
+|
 
 ├── valid/                    # Folder for validation images
 
-
+|   |
 
 │   └── ...                   # Validation images
 
-
+|
 
 └── flask_env/                # Virtual environment folder (should be in .gitignore)
 
