@@ -12,6 +12,7 @@ flask_env/
 .vscode/
 
 
-test/
-train/
-valid/
+# Remove or comment out the lines for the folders you want to track
+# test/
+# train/
+# valid/
