@@ -127,11 +127,11 @@ agro/
 
 │   └── uploads/              # Folder for uploaded images
 
-│       ├── AppleCedarRust1.JPG
+│         ├── AppleCedarRust1.JPG
 
-│       ├── AppleCedarRust2.JPG
+│         ├── AppleCedarRust2.JPG
 
-│       └── ...               # Other uploaded images
+│         └── ...               # Other uploaded images
 
 ├── templates/                # HTML templates for the Flask app
 
