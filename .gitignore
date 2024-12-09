@@ -11,7 +11,3 @@ flask_env/
 # Ignore VSCode settings
 .vscode/
 
-
-test/
-train/
-valid/
