@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AGRO-INFECTION DETECTION</h1>
+        </div>
+        <div class="main-content">
+            <div class="left-panel">
+                <p>Share a picture of the plant and get immediate results!</p>
+                <form action="/predict" method="post" enctype="multipart/form-data">
+                    <div class="upload-section">
+                        <input type="file" name="file" id="file">
+                        <button type="submit" id="analyze-button">ANALYZE</button>
+                        
+                    </div>
+                    {% if image_url %}
+                    <div class="image-preview">
+                        <img id="preview" src="{{ image_url }}" alt="Plant Image">
+                    </div>
+                    {% endif %}
+                    {% if prediction %}
+                    <div class="result-section">
+                        <p>Result: {{ prediction }}</p>
+                    </div>
+                    {% endif %}
+                </form>
+            </div>
+            <div class="right-panel">
+                <h2>Supported Diseases</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Class Names</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Apple</td>
+                            <td>Apple scab, Apple Black rot, Apple Cedar apple rust, Apple healthy</td>
+                        </tr>
+                        <tr>
+                            <td>Blueberry</td>
+                            <td>Blueberry healthy</td>
+                        </tr>
+                        <tr>
+                            <td>Cherry</td>
+                            <td>Cherry (including sour) Powdery mildew, Cherry (including sour) healthy</td>
+                        </tr>
+                        <tr>
+                            <td>Corn</td>
+                            <td>Corn Cercospora leaf spot, Corn Common rust, Corn Northern Leaf Blight, Corn healthy</td>
+                        </tr>
+                        <tr>
+                            <td>Grape</td>
+                            <td>Grape Black rot, Grape Esca (Black Measles), Grape Leaf blight (Isariopsis Leaf Spot), Grape healthy</td>
+                        </tr>
+                        <tr>
+                            <td>Orange</td>
+                            <td>Orange Haunglongbing (Citrus greening)</td>
+                        </tr>
+                        <tr>
+                            <td>Peach</td>
+                            <td>Peach Bacterial spot, Peach healthy</td>
+                        </tr>
+                        <tr>
+                            <td>Pepper</td>
+                            <td>Pepper bell Bacterial spot, Pepper bell healthy</td>
+                        </tr>
+                        <tr>
+                            <td>Potato</td>
+                            <td>Potato Early blight, Potato Late blight, Potato healthy</td>
+                        </tr>
+                        <tr>
+                            <td>Raspberry</td>
+                            <td>Raspberry healthy</td>
+                        </tr>
+                        <tr>
+                            <td>Soybean</td>
+                            <td>Soybean healthy</td>
+                        </tr>
+                        <tr>
+                            <td>Squash</td>
+                            <td>Squash Powdery mildew</td>
+                        </tr>
+                        <tr>
+                            <td>Strawberry</td>
+                            <td>Strawberry Leaf scorch, Strawberry healthy</td>
+                        </tr>
+                        <tr>
+                            <td>Tomato</td>
+                            <td>Tomato Bacterial spot, Tomato Early blight, Tomato Late blight, Tomato Leaf Mold, Tomato Septoria leaf spot, Tomato Spider mites, Tomato Target Spot, Tomato Yellow Leaf Curl Virus, Tomato Mosaic virus, Tomato healthy</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

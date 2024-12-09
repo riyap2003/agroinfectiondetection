@@ -1,0 +1,17 @@
+# Ignore Python bytecode files
+__pycache__/
+
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore environment folders
+flask_env/
+
+# Ignore VSCode settings
+.vscode/
+
+
+test/
+train/
+valid/
