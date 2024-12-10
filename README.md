@@ -75,7 +75,7 @@ Step 3: Download the Dataset
 You can download the dataset from Kaggle's Plant Disease Dataset. Alternatively, you can use your own dataset of plant leaf diseases. If you're using a custom dataset, make sure to update the model file path and class names accordingly.
 
 
-Here the model trained dataset is train folder ,tetst dataset is test folder above and validation is valid folder above
+Here the model trained dataset is train folder ,test dataset is test folder above and validation is valid folder above
 
 
 
