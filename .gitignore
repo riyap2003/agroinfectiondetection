@@ -12,3 +12,13 @@ flask_env/
 .vscode/
 
 
+# Remove or comment out the lines for the folders you want to track
+# test/
+# train/
+# valid/
+
+# Your local changes
+
+# Remote changes
+
+
